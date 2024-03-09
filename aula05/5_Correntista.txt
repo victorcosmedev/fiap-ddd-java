@@ -1,0 +1,17 @@
+package pacote;
+
+public class Correntista {
+	String nome;
+	double cpf;
+	ContaCorrente contaCorrente; // contaCorrente que pertence ao correntista
+	
+	Correntista(String nome, double cpf, ContaCorrente contaCorrente){
+		this.nome = nome;
+		this.cpf = cpf;
+		this.contaCorrente = contaCorrente;
+	}
+	
+	void transferencia(double valor, ContaCorrente contaSacada, ContaCorrente contaCreditada) {
+		
+	}
+}

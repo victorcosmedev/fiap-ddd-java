@@ -1,0 +1,25 @@
+package pacote;
+
+public class ContaCorrente {
+	double saldo;
+	
+	ContaCorrente(double saldo){
+		this.saldo = saldo;
+	}
+	
+	void sacar(double saque) {
+		saldo -= saque;
+	}
+	
+	void depositar(double deposito) {
+		saldo += deposito;
+	}
+	
+	void render() {
+		saldo = saldo * 1.01;
+	}
+	
+	double saldo() {
+		return saldo;
+	}
+}
