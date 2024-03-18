@@ -1,28 +1,36 @@
 package pacote;
 
 import java.util.ArrayList;
-import java.util.Scanner;
 
 public class Main {
 	public static void main(String[] args) {
-		ArrayList<Integer> inteiros = new ArrayList<>();
-		Scanner sc = new Scanner(System.in);
+		ArrayList<Integer> numerosInteiros = new ArrayList<>();
 		
-		for(int i = 0; i < 15; i++) {
-			inteiros.add(i);
-		}
+		numerosInteiros.add(10);
+		numerosInteiros.add(66);
+		numerosInteiros.add(68);
+		numerosInteiros.add(64);
+		numerosInteiros.add(22);
+		numerosInteiros.add(45);
+		numerosInteiros.add(13);
+		numerosInteiros.add(19);
+		numerosInteiros.add(44);
+		numerosInteiros.add(90);
+		numerosInteiros.add(2);
+		numerosInteiros.add(28);
+		numerosInteiros.add(17);
+		numerosInteiros.add(22);
+		numerosInteiros.add(67);
 		
-		System.out.println(inteiros);
+		int maiorNumero = numerosInteiros.get(0);
 		
-		
-		for(Integer inteiro : inteiros) {
-			int menorNumero = inteiro;
+		for(int numero : numerosInteiros) {
 			
-			if(inteiro < menorNumero) {
-				menorNumero = inteiro;
+			if (numero < maiorNumero) {
+				maiorNumero = numero;
 			}
 		}
 		
-		System.out.println(menorNumero);
+		System.out.println("O maior número é: " + maiorNumero);
 	}
 }
