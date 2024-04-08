@@ -1,16 +1,16 @@
-package pacote;
+package teste;
 
 public class Navio {
 	private String nome;
 	private double velocidade;
 	
-	Navio(String nome, double velocidade){
+	public Navio(String nome, double velocidade){
 		this.nome = nome;
 		this.velocidade = velocidade;
 	}
 	
-	void aumentarVelocidade(double incremento) {
-		if((velocidade + incremento) < 100) {
+	public void aumentarVelocidade(double incremento) {
+		if((velocidade + incremento) <= 100) {
 			velocidade += incremento;
 			System.out.println("\nA velocidade atual do navio é de: " + velocidade + " nós.");
 		}
@@ -19,7 +19,7 @@ public class Navio {
 		}
 	}
 	
-	void diminuirVelocidade(double decremento) {
+	public void diminuirVelocidade(double decremento) {
 		velocidade += decremento;
 		System.out.println("\nA velocidade atual do navio é de: " + velocidade + " nós.");
 	}
